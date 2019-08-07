@@ -6,7 +6,8 @@
 
   <ItemGroup>
     <Reference Include="ERPConnect45">
-      <HintPath>C:\Users\soportedesarrollo1\Desktop\ERPConnect45.dll</HintPath>
+      <HintPath>C:\Users\Gerson Navarro\Desktop\ERPConnect45.dll</HintPath>
+      <Private>true</Private>
     </Reference>
   </ItemGroup>
 

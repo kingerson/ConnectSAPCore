@@ -1,6 +1,5 @@
 ﻿using ConnectSAPCore.Infra.CrossCutting.Sap;
 using Microsoft.AspNetCore.Mvc;
-using System.Collections.Generic;
 using System.Net;
 using System.Threading.Tasks;
 
@@ -16,9 +15,10 @@ namespace ConnectSAPCore.Service.Controllers
 
         // GET api/values/5
         [HttpGet]
+        [Route("GetMoneda")]
         [ProducesResponseType((int)HttpStatusCode.OK)]
         [ProducesResponseType((int)HttpStatusCode.NotFound)]
-        public async Task<IActionResult> Get(int id)
+        public async Task<IActionResult> GetMoneda(int id)
         {
             var result = await _sapService.GetMoneda();
             return Ok(result);
