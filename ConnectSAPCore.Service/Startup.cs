@@ -77,7 +77,7 @@ namespace ConnectSAPCore.Service
             {
                 c.SwaggerEndpoint("/swagger/v1/swagger.json", "Servicios SAP API");
             });
-            app.UseMvcWithDefaultRoute();
+            app.UseMvc();
         }
     }
 }
