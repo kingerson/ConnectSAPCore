@@ -1,0 +1,46 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29123.88
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConnectSAPCore.Service", "ConnectSAPCore.Service\ConnectSAPCore.Service.csproj", "{CA1A5F27-A944-4414-9DC3-41BC53E9D269}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{F9CFBDDF-4E14-435A-960A-51D40FB24EF7}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Services", "Services", "{1E77E6A7-18DE-4A50-9CAE-683F18BDC1D5}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infraestructure", "Infraestructure", "{1986FE38-BB48-4E98-B2ED-DCE428318869}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CrossCutting", "CrossCutting", "{16FCA423-89F3-45E3-91CD-96094E06EEEB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConnectSAPCore.Infra.CrossCutting", "ConnectSAPCore.Infra.CrossCutting\ConnectSAPCore.Infra.CrossCutting.csproj", "{52B38E77-BB5A-4498-9D2D-3D6E799FF839}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CA1A5F27-A944-4414-9DC3-41BC53E9D269}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CA1A5F27-A944-4414-9DC3-41BC53E9D269}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CA1A5F27-A944-4414-9DC3-41BC53E9D269}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CA1A5F27-A944-4414-9DC3-41BC53E9D269}.Release|Any CPU.Build.0 = Release|Any CPU
+		{52B38E77-BB5A-4498-9D2D-3D6E799FF839}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{52B38E77-BB5A-4498-9D2D-3D6E799FF839}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{52B38E77-BB5A-4498-9D2D-3D6E799FF839}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{52B38E77-BB5A-4498-9D2D-3D6E799FF839}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{CA1A5F27-A944-4414-9DC3-41BC53E9D269} = {1E77E6A7-18DE-4A50-9CAE-683F18BDC1D5}
+		{1E77E6A7-18DE-4A50-9CAE-683F18BDC1D5} = {F9CFBDDF-4E14-435A-960A-51D40FB24EF7}
+		{1986FE38-BB48-4E98-B2ED-DCE428318869} = {F9CFBDDF-4E14-435A-960A-51D40FB24EF7}
+		{16FCA423-89F3-45E3-91CD-96094E06EEEB} = {1986FE38-BB48-4E98-B2ED-DCE428318869}
+		{52B38E77-BB5A-4498-9D2D-3D6E799FF839} = {16FCA423-89F3-45E3-91CD-96094E06EEEB}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {506B2784-39AC-4EF4-940D-E7B050BC870C}
+	EndGlobalSection
+EndGlobal

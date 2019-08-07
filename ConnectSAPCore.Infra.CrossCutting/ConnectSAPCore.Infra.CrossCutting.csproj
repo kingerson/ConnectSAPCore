@@ -1,0 +1,13 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Reference Include="ERPConnect45">
+      <HintPath>C:\Users\soportedesarrollo1\Desktop\ERPConnect45.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>
