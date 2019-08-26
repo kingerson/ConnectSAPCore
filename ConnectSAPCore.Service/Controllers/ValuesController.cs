@@ -15,10 +15,10 @@ namespace ConnectSAPCore.Service.Controllers
 
         // GET api/values/5
         [HttpGet]
-        [Route("GetMoneda")]
+        [Route("Dummy")]
         [ProducesResponseType((int)HttpStatusCode.OK)]
         [ProducesResponseType((int)HttpStatusCode.NotFound)]
-        public async Task<IActionResult> GetMoneda()
+        public async Task<IActionResult> Dummy()
         {
             var result = await _sapService.GetMoneda();
             return Ok(result);

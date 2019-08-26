@@ -17,10 +17,7 @@ namespace ConnectSAPCore.Service
     public class Startup
     {
         public IConfiguration _configuration { get; }
-        public Startup(IConfiguration configuration)
-        {
-            _configuration = configuration;
-        }
+        public Startup(IConfiguration configuration) => _configuration = configuration;
 
         // This method gets called by the runtime. Use this method to add services to the container.
         public IServiceProvider ConfigureServices(IServiceCollection services)
@@ -53,18 +50,13 @@ namespace ConnectSAPCore.Service
             return new AutofacServiceProvider(container.Build());
         }
 
-        private static void RegisterServices(IServiceCollection services)
-        {
-            BootStrapper.RegisterServices(services);
-        }
+        private static void RegisterServices(IServiceCollection services) => BootStrapper.RegisterServices(services);
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IHostingEnvironment env)
         {
             if (env.IsDevelopment())
-            {
                 app.UseDeveloperExceptionPage();
-            }
 
             app.UseCors(builder => builder
                  .AllowAnyOrigin()
@@ -77,7 +69,7 @@ namespace ConnectSAPCore.Service
             {
                 c.SwaggerEndpoint("/swagger/v1/swagger.json", "Servicios SAP API");
             });
-            app.UseMvc();
+            app.UseMvcWithDefaultRoute();
         }
     }
 }

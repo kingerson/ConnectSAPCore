@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29123.88
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConnectSAPCore.Service", "ConnectSAPCore.Service\ConnectSAPCore.Service.csproj", "{CA1A5F27-A944-4414-9DC3-41BC53E9D269}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConnectSAPCore.Service", "ConnectSAPCore.Service\ConnectSAPCore.Service.csproj", "{CA1A5F27-A944-4414-9DC3-41BC53E9D269}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{F9CFBDDF-4E14-435A-960A-51D40FB24EF7}"
 EndProject
@@ -13,7 +13,12 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infraestructure", "Infraest
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CrossCutting", "CrossCutting", "{16FCA423-89F3-45E3-91CD-96094E06EEEB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConnectSAPCore.Infra.CrossCutting", "ConnectSAPCore.Infra.CrossCutting\ConnectSAPCore.Infra.CrossCutting.csproj", "{52B38E77-BB5A-4498-9D2D-3D6E799FF839}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConnectSAPCore.Infra.CrossCutting", "ConnectSAPCore.Infra.CrossCutting\ConnectSAPCore.Infra.CrossCutting.csproj", "{52B38E77-BB5A-4498-9D2D-3D6E799FF839}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Dll", "Dll", "{AFB0EB1E-A60C-4019-A30D-C356F60DEFD3}"
+	ProjectSection(SolutionItems) = preProject
+		C:\Program Files\ERPConnect\ERPConnectStandard20.dll = C:\Program Files\ERPConnect\ERPConnectStandard20.dll
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +44,7 @@ Global
 		{1986FE38-BB48-4E98-B2ED-DCE428318869} = {F9CFBDDF-4E14-435A-960A-51D40FB24EF7}
 		{16FCA423-89F3-45E3-91CD-96094E06EEEB} = {1986FE38-BB48-4E98-B2ED-DCE428318869}
 		{52B38E77-BB5A-4498-9D2D-3D6E799FF839} = {16FCA423-89F3-45E3-91CD-96094E06EEEB}
+		{AFB0EB1E-A60C-4019-A30D-C356F60DEFD3} = {1986FE38-BB48-4E98-B2ED-DCE428318869}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {506B2784-39AC-4EF4-940D-E7B050BC870C}
