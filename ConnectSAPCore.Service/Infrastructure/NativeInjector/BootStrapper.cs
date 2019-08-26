@@ -5,9 +5,6 @@ namespace ConnectSAPCore.Service.Infrastructure.NativeInjector
 {
     public class BootStrapper
     {
-        public static void RegisterServices(IServiceCollection services)
-        {
-            services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
-        }
+        public static void RegisterServices(IServiceCollection services) => services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
     }
 }

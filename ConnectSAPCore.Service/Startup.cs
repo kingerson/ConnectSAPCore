@@ -30,6 +30,7 @@ namespace ConnectSAPCore.Service
             {
                 options.Providers.Add<GzipCompressionProvider>();
             });
+
             services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("v1", new Info { Title = "Servicios SAP API", Version = "V1" });
@@ -46,7 +47,6 @@ namespace ConnectSAPCore.Service
             container.Populate(services);
 
             container.RegisterModule(new ServicesModule(_configuration["ConnectionStringSAP"], _configuration["License"]));
-
             return new AutofacServiceProvider(container.Build());
         }
 
@@ -62,6 +62,7 @@ namespace ConnectSAPCore.Service
                  .AllowAnyOrigin()
                  .AllowAnyMethod()
                  .AllowAnyHeader());
+
             app.UseResponseCompression();
 
             app.UseSwagger();

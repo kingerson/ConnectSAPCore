@@ -14,7 +14,7 @@ namespace ConnectSAPCore.Service.Controllers
 
 
         // GET api/values/5
-        [HttpGet]
+        [HttpPost]
         [Route("Dummy")]
         [ProducesResponseType((int)HttpStatusCode.OK)]
         [ProducesResponseType((int)HttpStatusCode.NotFound)]
