@@ -1,8 +1,5 @@
-﻿using ERPConnect.Linq;
-
-namespace ConnectSAPCore.Infra.CrossCutting.Models
+﻿namespace ConnectSAPCore.Infra.CrossCutting.Models
 {
-    [ERPTable("TCURT")]
     public class TipoMoneda
     {
         public string MANDT { get; set; }
